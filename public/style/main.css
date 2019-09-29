@@ -1,0 +1,115 @@
+body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Roboto; }
+
+.title {
+  text-align: center; }
+
+.container {
+  width: 90%;
+  margin: auto; }
+
+.comment-wrapper {
+  border: 1px solid rgba(121, 121, 121, 0.267);
+  font-size: 13px;
+  margin: 0;
+  box-sizing: border-box; }
+
+.comment-view {
+  display: flex;
+  padding: 8px 10px; }
+  .comment-view .user-avatar {
+    margin-right: 6px; }
+    .comment-view .user-avatar img {
+      width: 36px;
+      border-radius: 100%;
+      vertical-align: middle; }
+  .comment-view .comment-body .comment-display {
+    padding: 8px 10px;
+    background-color: #f2f3f5;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    color: #1c1e21; }
+  .comment-view .comment-body .username a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2949b4; }
+  .comment-view .comment-body .comment-action {
+    padding-left: 10px !important;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .comment-view .comment-body .comment-action li {
+      margin-right: 10px; }
+    .comment-view .comment-body .comment-action #parent-replay {
+      cursor: pointer; }
+
+.nested-comment-view .comment-view .user-avatar img {
+  width: 24px; }
+
+.comment-form {
+  display: flex;
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(121, 121, 121, 0.267); }
+  .comment-form .user-avatar {
+    margin-right: 6px;
+    align-self: center; }
+    .comment-form .user-avatar img {
+      width: 36px;
+      border-radius: 100%;
+      vertical-align: middle; }
+  .comment-form .form {
+    background-color: #f2f3f5;
+    border: 1px solid #ccd0d5;
+    border-radius: 16px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center; }
+    .comment-form .form .form__textarea {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      border: none;
+      outline: none;
+      background: transparent;
+      height: 30px;
+      line-height: 30px;
+      width: 100%;
+      color: #424242; }
+    .comment-form .form .form__imoji {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      height: 35px;
+      line-height: 35px; }
+      .comment-form .form .form__imoji li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-right: 8px; }
+      .comment-form .form .form__imoji a {
+        color: #202020; }
+
+.nested-replay-form {
+  height: 0;
+  transform: scale(0);
+  overflow: hidden;
+  transition: all .5s ease; }
+  .nested-replay-form .comment-form {
+    border: none; }
+    .nested-replay-form .comment-form .user-avatar img {
+      width: 24px; }
+
+.open-replay-form {
+  height: max-content;
+  overflow: visible;
+  transform: scale(1);
+  transition: all .5s ease; }

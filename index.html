@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Comment List</title>
+  <link rel="stylesheet" href="./public/style/main.css">
+  <link rel="stylesheet" href="./public/vendor/fontawesome-free/css/all.css">
+</head>
+
+<body>
+  <div class="container">
+
+
+    <h1 class="title">HTML CSS Comment View</h1>
+
+    <li class="comment-wrapper">
+      <!--. Comment Form  -->
+      <div class="comment-form">
+        <div class="user-avatar">
+          <img src="./public/images/img_avatar4.png" alt="">
+        </div>
+        <form class="form">
+          <input class="form__textarea" placeholder="Enter Your Comment" name=""></input>
+          <ul class="form__imoji">
+            <li><a href="#"><i class="fa fa-smile" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-video" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-file" aria-hidden="true"></i></a></li>
+          </ul>
+        </form>
+      </div>
+
+
+      <!--. Comment View -->
+      <div class="comment-view">
+        <div class="user-avatar">
+          <img src="./public/images/img_avatar2.png" alt="">
+        </div>
+        <div class="comment-body">
+          <div class="comment-display">
+            <span class="username"><a href="#">RaseL Mahmud</a></span>
+            <span class="comment-des">bus</span>
+          </div>
+          <ul class="comment-action">
+            <li>Like</li>
+            <li id="parent-replay">Reply</li>
+            <li>2h</li>
+          </ul>
+
+          <!-- step 1 Nested Comment view -->
+          <div class="nested-comment-view">
+            <div class="comment-view">
+              <div class="user-avatar">
+                <img src="./public/images/img_avatar2.png" alt="">
+              </div>
+              <div class="comment-body">
+                <div class="comment-display">
+                  <span class="username"><a href="#">RaseL</a></span>
+                  <span class="comment-des">no, u are worng</span>
+                </div>
+                <ul class="comment-action">
+                  <li>Like</li>
+                  <li id="nested-replay">Reply</li>
+                  <li>2h</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- step 1 Nested Comment view End -->
+
+          <!-- step 1 Nested Replay form -->
+          <div class="nested-replay-form">
+            <div class="comment-form">
+              <div class="user-avatar">
+                <img src="./public/images/img_avatar4.png" alt="">
+              </div>
+              <form class="form">
+                <input class="form__textarea" placeholder="Enter Your Comment" name=""></input>
+                <ul class="form__imoji">
+                  <li><a href="#"><i class="fa fa-smile" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-video" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-file" aria-hidden="true"></i></a></li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <!-- step 1 Nested Replay form End -->
+
+        </div>
+      </div>
+    </li>
+
+  </div>
+
+  <script src="./public/js/index.js"></script>
+</body>
+
+</html>
